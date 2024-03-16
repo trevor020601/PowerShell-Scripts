@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCleanupJob", "DirectoryCleanupJob.csproj", "{82174D99-E2DE-44B0-966A-08882C677B63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellUnitTest", "..\PowerShellUnitTest\PowerShellUnitTest.csproj", "{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{82174D99-E2DE-44B0-966A-08882C677B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82174D99-E2DE-44B0-966A-08882C677B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82174D99-E2DE-44B0-966A-08882C677B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

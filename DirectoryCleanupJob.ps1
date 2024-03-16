@@ -1,4 +1,11 @@
-﻿function Delete-FilesCreatedBeforeDate {
+﻿if ($PSVersionTable.PSVersion.Major -ne 7) {
+	Write-Host "Not running PowerShell Core, relaunching...; Try & 'C:\Program Files\PowerShell\7\pwsh.exe'"
+	$sb = [ScriptBlock]::Create($MyInvocation.Line)
+	& 'C:\Program Files\PowerShell\7\pwsh.exe' -Command $sb
+	exit
+}
+
+function Delete-FilesCreatedBeforeDate {
 	[CmdletBinding()]
 	param (
 		[Parameter(Mandatory)]
@@ -79,3 +86,14 @@ class CleanupDir {
 	15,
 	"*"
 )
+
+$CleanupDirs = @($TestDir)
+
+foreach ($CD in $CleanupDirs) {
+	$parameters = @{
+		ComputerName = $CD.Host
+		ScriptBlock = $(Function:\Delete-FilesCreatedBeforeDate)
+		ArgumentList = $CD.Path, $CD.Age, $CD.FileExtension
+	}
+	Invoke-Command @parameters
+}
