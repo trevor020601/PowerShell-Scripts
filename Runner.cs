@@ -1,11 +1,17 @@
 ﻿using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 
-public class DirectoryCleanupJob
+public class Runner
 {
     public static void Main(string[] args)
     {
         RunScript(@"C:\Coding Projects\PowerShell\DirectoryCleanupJob\DirectoryCleanupJob.ps1");
+        
+        var cmdParamList = new List<CommandParameter>
+        {
+            new CommandParameter("Path", @"C:\Coding Projects\PowerShell\DirectoryCleanupJob\bin")
+        };
+        RunScript(@"C:\Coding Projects\PowerShell\DirectoryCleanupJob\ShowBinAssemblyVersions.ps1", cmdParamList);
     }
 
     public static ICollection<PSObject> RunScript(string scriptFullPath, ICollection<CommandParameter>? commandParameters = null)

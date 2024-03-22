@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCleanupJob", "DirectoryCleanupJob.csproj", "{82174D99-E2DE-44B0-966A-08882C677B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerShellScripts", "PowerShellScripts.csproj", "{82174D99-E2DE-44B0-966A-08882C677B63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShellUnitTest", "..\PowerShellUnitTest\PowerShellUnitTest.csproj", "{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerShellUnitTest", "..\PowerShellUnitTest\PowerShellUnitTest.csproj", "{5C1CECCC-9450-41BD-8AD5-B01915D9FC3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
